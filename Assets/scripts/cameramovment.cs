@@ -28,6 +28,7 @@ public class cameramovment : MonoBehaviour
         {
 
             cam.orthographicSize = Mathf.SmoothDamp(cam.orthographicSize, targetSize, ref zoomVelocity, zoomSpeed);
+            
 
             if (Mathf.Abs(cam.orthographicSize - ActualltargetSize) < 0.1f)
             {
